@@ -1,67 +1,26 @@
-# This is duplicated here from configs/mydoc/config_designers.yml so that Github Pages can read it. Github Pages requires this file for the build process. It can't read a configuration file stored in another location.
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-# project definitions
-project: mydoc_designers
-audience: designers
-product: doc
-platform: all
-version: all
-output: web
-destination: ../doc_outputs/mydoc/designers
-topnav_title: Jekyll Documentation Theme
-homepage_title: Jekyll doc theme for designers
-site_title: Jekyll theme for designers
-project_folder: mydoc
-company_name: Your company
-footer_image_location: ../common_images/company_logo.png
-github_editme_path: tomjohnson1492/documentation-theme-jekyll/edit/reviews
-disqus_shortname: idrbwjekyll
-# variables
+# Site settings
+title: Princess Diaries
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+    This is just another Jekyll theme.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://kawabangga.com" # the base hostname & protocol for your site
+facebook: https://www.facebook.com/profile.php?id=100008578420735
+github:  https://github.com/laixintao
+twitter: https://twitter.com/SinpeachLai
 
-sidebar_tagline: Designers
-sidebar_version: Version 4.0
-theme_file: theme-blue.css
-pdf_file_name: mydoc_designers_pdf.pdf
+# Build settings
+markdown: kramdown
 
-port: 4009
+paginate: 3
+paginate_path: "page:num"
 
-exclude:
-  - _site
-  - _drafts
-  - configs/
-  - doc/mydoc_writers*
 
-# same for all
-host: 127.0.0.1
-feedback_email: tomjohnson1492@gmail.com
-
-markdown: redcarpet
-
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "tables", "with_toc_data"]
-
-highlighter: pygments
-
-collections:
-  tooltips:
-    output: false
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-      comments: true
-      search: true
-  -
-    scope:
-      path: ""
-      type: "tooltips"
-    values:
-      layout: "page"
-      comments: true
-      search: true
-      tooltip: true
-
+gems: [jekyll-paginate] 
