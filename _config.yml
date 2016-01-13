@@ -16,7 +16,7 @@ theme:
   # Header and footer text
   header_text: >
       To learn a little more everyday, not much, just '1%'
-      After 100 days, When you look backward, you will be surprised by '270%' 
+      After 100 days, you will be surprised by '270%' 
 
   header_text_feature_image: img/sample_feature_img.png
   place_holder_image: img/sample_feature_img.png
