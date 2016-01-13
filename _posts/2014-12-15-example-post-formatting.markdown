@@ -3,7 +3,7 @@ layout: post
 title:  "Example Post Formatting"
 date:   2014-12-15
 author: Author
-category: ios
+category: coach
 tags: [jekyll, github]
 ---
 
