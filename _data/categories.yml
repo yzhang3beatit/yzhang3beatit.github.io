@@ -8,3 +8,12 @@
 
 - slug: other
   name: Other
+
+- slug: cleancode
+  name: CleanCode
+
+- slug: language
+  name: Language
+
+- slug: coach
+  name: Coach
