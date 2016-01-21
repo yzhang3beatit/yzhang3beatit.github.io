@@ -81,7 +81,7 @@ Python 确实的可以完成脚本语言的功能（使用更简洁的方式）�
 
 Python
 
-<img src="{{ '/img/tourin.jpg' | prepend: site.baseurl}}" alt="touring" >
+<img src="{{ '/img/tourin.jpg' | prepend: site.baseurl}}" alt="touri" >
 
 
 <img src="{{ '/img/python-pic/01python_short.png' | prepend: site.baseurl}}" alt="python_short" >
