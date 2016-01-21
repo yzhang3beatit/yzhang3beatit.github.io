@@ -80,6 +80,9 @@ Python 确实的可以完成脚本语言的功能（使用更简洁的方式）�
 和 Python 之禅（注1）里表述的一样，简单优雅已经深入Python骨髓。正是这个原因，Python 才被认为上手简单，开发快速，程序可读性超强；也正是这些特点，互联网公司更有意愿使用它，因为快速发布是它们的生存之根本。在实践中，程序员可以很直观地发现，用 Python 写的代码通常要比同样的 C/C++ 或 JAVA 程序要短得多。
 
 Python
+<img src="{{ '/img/touring.jpg' | prepend: site.baseurl}}" alt="touring" >
+<img src="{{ '/img/python-pic/01python_short.png' | prepend: site.baseurl}}" alt="python" >
+
 ![python-short](img/python-pic/01python_short.png)
 
 
