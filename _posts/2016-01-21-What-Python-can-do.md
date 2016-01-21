@@ -14,12 +14,7 @@ tags: [python]
 >“脚本语言”，请跳转到3节；
 >“不适用于大工程”，请跳转4节；
 
-
-
 ---
-
-
-
 ## 巨蟒剧团之飞行马戏团
 
 巨蟒剧团（Monty Python），1969年10月5日，当这五个英国佬和一个美国佬第一次胡言乱语恬不知耻地出现在BBC电视台上时，整个英伦三岛都傻了眼。从这天开始，在之后短短的四年间， “巨蟒剧团” 及其六位成员的名字通过《飞翔的马戏团》这套空前成功的电视喜剧节目，很快成为了英国现代文化的一个标志。这个名字，在今天不仅仅指向他们合作的四季电视剧和四部故事片，也不只代言喜剧的后现代面孔，而俨然已经被推崇为后现代的文化符号，有喜剧界的披头士之称。CNN的追忆文章曾感慨“巨蟒改变了世界”。
@@ -37,22 +32,21 @@ tags: [python]
 
 关于Python是一种什么样的语言，这里不打算说对象、类之类的术语。我们可以先来看一看，时至今日 Python 都在哪些领域里得以应用：
 
-**电信基础设施**(Twilio)
-**支付系统** (PayPal, Balanced Payments)
-**神经科学和心理学** 
-**数值分析和工程** (numpy, numba)
-**动画**(LucasArts, Disney, Dreamworks)
-**游戏后台** (Eve Online, Second Life...)
-**Email 基础设施** (Mailman, Mailgun)
-**媒体存储和处理** (YouTube, Dropbox)
-**操作和系统管理** (Rackspace, OpenStack)
-**自然语言处理**(NLTK)
-**机器学习和计算机版本** (scikit-learn, Orange)
-**安全性和渗透性测试** ( eBay/PayPal )
-**大数据** (Disco, Hadoop support)
-**搜索系统** (ITA, Ultraseek, 还有 Google)
-**Internet基础设** (DNS) (BIND 10)
-
+**电信基础设施**(Twilio)  
+**支付系统** (PayPal, Balanced Payments)  
+**神经科学和心理学**   
+**数值分析和工程** (numpy, numba)  
+**动画**(LucasArts, Disney, Dreamworks)  
+**游戏后台** (Eve Online, Second Life...)  
+**Email 基础设施** (Mailman, Mailgun)  
+**媒体存储和处理** (YouTube, Dropbox)  
+**操作和系统管理** (Rackspace, OpenStack)  
+**自然语言处理**(NLTK)  
+**机器学习和计算机版本** (scikit-learn, Orange)  
+**安全性和渗透性测试** ( eBay/PayPal )  
+**大数据** (Disco, Hadoop support)  
+**搜索系统** (ITA, Ultraseek, 还有 Google)  
+**Internet基础设** (DNS) (BIND 10)  
 
 在如此之多领域的公司里得到广泛使用的Python，难道只是用在它们的测试部门？至少根据网络上的谣言，豆瓣、Youbute、和 Dropbox 都是以 Python 为主体语言搭建起来的网站。Python 强大的能力（例如：网络处理能力，还有各种扩展包），可以使得程序员们把注意力投放在实现业务上，而不是内存管理，接口设计之类的细节上。
 
@@ -65,7 +59,6 @@ tags: [python]
 由于 Python 与 C 的天然联系，它们之间的相互调用从来都不是问题。特别是 Python 如何调用 C 在《 Programming Python》的 Chapter 22. Extending Python 部分有介绍。Python 调用 C 的动态/静态库并不是一件复杂的事情。实际上， Python 原生的正则表达式库就是用 C 语言实现的。
 
 ---
-
 ### Python 只是脚本语言？
 
 Python 确实的可以完成脚本语言的功能（使用更简洁的方式）。Shell 工具往往从命令行运行，实现诸如文本文件的处理以及调用其他程序等任务。Python 能做的更多。
@@ -81,42 +74,29 @@ Python 确实的可以完成脚本语言的功能（使用更简洁的方式）�
 
 Python
 
-<img src="{{ '/img/tourin.jpg' | prepend: site.baseurl}}" alt="touri" >
-
-
 <img src="{{ '/img/python-pic/01python_short.png' | prepend: site.baseurl}}" alt="python_short" >
-
-
-
-![python-short](img/python-pic/01python_short.png)
-
 
 C++
 
-
-
+<img src="{{ '/img/python-pic/02cpp_long.png' | prepend: site.baseurl}}" alt="02cpp_long.png" >
 
 ---
-
 能做到这些，是因为Python
  
-
-
 #### 变量不需要声明
-
 
 这个真的很方便。变量的声明和定义一定会严重打断对代码逻辑的思考，还有对齐的麻烦。内存的管理，这简直都就是 C/C++ 编程中最常见的雷区，由于省略了声明，这也不再是问题了。
 
 #### 缩进而不是 ‘{’  ‘}’
 
-
 Python 是以缩进来管理代码结构的。这样做有他的优越性：程序员们一定有过漏写 '{' 或者 '}' 的经历。如果使用的编译器或者解释器优秀的话，漏去的'{' '}'的确可以非常容易的加上。但如果不是这样，请在复杂的代码中漫游一会吧。因为可能编译器会通知一个 '错误' 的错误信息，这个错误的位置可能会离你真正错误的地方很远（十万八千里?!）。相对于此，以缩进管理方式的 Python 来说，程序员几乎不用考虑这种问题。其次以缩进方式区分块的Python在进行复杂的嵌套中，Python代码就显得明了许多了。
 Python
 
-
+<img src="{{ '/img/python-pic/03python_clean.png' | prepend: site.baseurl}}" alt="03python_clean.png" >
 
 C++
 
+<img src="{{ '/img/python-pic/04cpp_complex.png' | prepend: site.baseurl}}" alt="04cpp_complex.png" >
 
 
 相比较来看，Python的代码更能分清其层次，而对于C++这样的代码虽然能够编译成功。但是，对于其日后的维护，会造成无尽的痛苦。由此，可以看出 Python的语法简洁。同时，Python 的查错能力也非常强。在一般情况下，Python的解释器能够准确指出错误的位置和原因。
@@ -131,30 +111,34 @@ Python 的缩颈唯一没有做好的就是没有指定一定要缩进4个空格
 
 ##### 多参数同时赋值
 
+<img src="{{ '/img/python-pic/python_simple.png' | prepend: site.baseurl}}" alt="python_simple.png" >
 
 ##### 交换就可以交换
 `a, b = b, a`
 
 ##### 神奇的字符串操作
 
+<img src="{{ '/img/python-pic/python_simple2.png' | prepend: site.baseurl}}" alt="python_simple2.png" >
 
 ##### 一行的循环
 
-
+<img src="{{ '/img/python-pic/python_simple3.png' | prepend: site.baseurl}}" alt="python_simple3.png" >
 
 ##### 不需要 if 的判断语句
 
-
-
+<img src="{{ '/img/python-pic/python_simple4.png' | prepend: site.baseurl}}" alt="python_simple4.png" >
 
 ##### 打开并读取文件
 
+<img src="{{ '/img/python-pic/python_simple8.png' | prepend: site.baseurl}}" alt="python_simple8.png" >
 
 ##### 生成函数
 
+<img src="{{ '/img/python-pic/python_simple9.png' | prepend: site.baseurl}}" alt="python_simple9.png" >
 
 ##### 函数式编程（匿名函数）
 
+<img src="{{ '/img/python-pic/python_simpleA.png' | prepend: site.baseurl}}" alt="python_simpleA.png" >
 
 ---
 
