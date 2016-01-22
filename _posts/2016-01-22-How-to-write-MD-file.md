@@ -7,6 +7,8 @@ category: coach
 tags: [open-source]
 ---
 
+[toc]
+
 <p class="intro"><span class="dropcap">M</span>arkdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。</p>
 
 ## **兼容HTML**
@@ -229,3 +231,113 @@ Use the `printf()` function.
 
 ### 使用 `<img>` 标签
 
+
+## ~~strikethrough~~
+
+
+## ++insert++
+
+
+## ==mark==
+
+
+## Subscript: H~2~O
+
+You can also use inline math: `$H_2O$`
+
+
+## Superscript: 29^th^
+
+You can also use inline math: `$29^{th}$`
+
+
+[Code Formatting](https://help.github.com/articles/markdown-basics/#code-formatting)
+
+## Tables and alignment
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+
+[Table Syntax](https://help.github.com/articles/github-flavored-markdown/#tables)
+
+
+## Task list
+
+- [ ] a bigger project
+  - [x] first subtask
+  - [x] follow up subtask
+  - [ ] final subtask
+- [ ] a separate task
+
+[Task List Syntax](https://help.github.com/articles/writing-on-github/#task-lists)
+
+
+## Abbreviation
+
+Markup is based on [php markdown extra](https://michelf.ca/projects/php-markdown/extra/#abbr) definition, but without multiline support:
+
+*[HTML]: Hyper Text Markup Language
+*[W3C]:  World Wide Web Consortium
+The HTML specification
+is maintained by the W3C.
+
+
+## Footnote
+
+Here is a footnote reference,[^1] and another.[^longnote]
+
+[^1]: Here is the footnote.
+
+[^longnote]: Here's one with multiple blocks.
+
+    Subsequent paragraphs are indented to show that they
+belong to the previous footnote.
+
+
+Here is an inline note.^[Inlines notes are easier to write, since
+you don't have to pick an identifier and move down to type the
+note.]
+
+[Footnote Syntax](http://pandoc.org/README.html#footnotes)
+
+
+## Flowchart
+
+```
+graph TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[Car]
+```
+
+[Flowchart Syntax](http://knsv.github.io/mermaid/#flowcharts-basic-syntax)
+
+::: warning
+Adding many flowcharts will slow down the editor.
+:::
+
+
+## Sequence diagram
+
+```
+sequenceDiagram
+    loop every day
+        Alice->>John: Hello John, how are you?
+        John-->>Alice: Great!
+    end
+```
+
+[Sequence Diagram Syntax](http://knsv.github.io/mermaid/#sequence-diagrams)
+
+::: warning
+Adding many sequence diagrams will slow down the editor.
+:::
