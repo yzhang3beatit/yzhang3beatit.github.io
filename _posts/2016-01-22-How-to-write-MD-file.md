@@ -201,6 +201,9 @@ _single underscores_
 __double underscores__
 
 
+ ~~strikethrough~~
+
+
 ## **代码**
 
 可以使用**反引号**来包含包含代码
@@ -232,43 +235,7 @@ Use the `printf()` function.
 ### 使用 `<img>` 标签
 
 
-## ~~strikethrough~~
-
-
-## ++insert++
-
-
-## ==mark==
-
-
-## Subscript: H~2~O
-
-You can also use inline math: `$H_2O$`
-
-
-## Superscript: 29^th^
-
-You can also use inline math: `$29^{th}$`
-
-
-[Code Formatting](https://help.github.com/articles/markdown-basics/#code-formatting)
-
-## Tables and alignment
-
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-
-[Table Syntax](https://help.github.com/articles/github-flavored-markdown/#tables)
-
-
-## Task list
+### Task list
 
 - [ ] a bigger project
   - [x] first subtask
@@ -279,7 +246,43 @@ Content in the first column | Content in the second column
 [Task List Syntax](https://help.github.com/articles/writing-on-github/#task-lists)
 
 
-## Abbreviation
+
+[Code Formatting](https://help.github.com/articles/markdown-basics/#code-formatting)
+
+### Tables and alignment
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+
+[Table Syntax](https://help.github.com/articles/github-flavored-markdown/#tables)
+
+
+
+### External
+
+++insert++
+
+==mark==
+
+#### Subscript: H~2~O
+
+You can also use inline math: `$H_2O$`
+
+
+#### Superscript: 29^th^
+
+You can also use inline math: `$29^{th}$`
+
+
+#### Abbreviation
 
 Markup is based on [php markdown extra](https://michelf.ca/projects/php-markdown/extra/#abbr) definition, but without multiline support:
 
@@ -289,7 +292,7 @@ The HTML specification
 is maintained by the W3C.
 
 
-## Footnote
+#### Footnote
 
 Here is a footnote reference,[^1] and another.[^longnote]
 
@@ -308,7 +311,7 @@ note.]
 [Footnote Syntax](http://pandoc.org/README.html#footnotes)
 
 
-## Flowchart
+#### Flowchart
 
 ```
 graph TD
@@ -326,7 +329,7 @@ Adding many flowcharts will slow down the editor.
 :::
 
 
-## Sequence diagram
+#### Sequence diagram
 
 ```
 sequenceDiagram
