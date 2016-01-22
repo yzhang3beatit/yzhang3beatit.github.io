@@ -246,6 +246,17 @@ Use the `printf()` function.
 [Task List Syntax](https://help.github.com/articles/writing-on-github/#task-lists)
 
 
+``` C++
+    // initialize ASFormatter member vectors
+	formatterFileType = 9;		// reset to an invalid type
+	headers = new vector<const string*>;
+	nonParenHeaders = new vector<const string*>;
+	preDefinitionHeaders = new vector<const string*>;
+	preCommandHeaders = new vector<const string*>;
+	operators = new vector<const string*>;
+	assignmentOperators = new vector<const string*>;
+	castOperators = new vector<const string*>;
+```
 
 [Code Formatting](https://help.github.com/articles/markdown-basics/#code-formatting)
 
