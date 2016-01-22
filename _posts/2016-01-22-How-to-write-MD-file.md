@@ -245,6 +245,7 @@ Use the `printf()` function.
 
 [Task List Syntax](https://help.github.com/articles/writing-on-github/#task-lists)
 
+### Lines of Codes
 
 ``` C++
     // initialize ASFormatter member vectors
