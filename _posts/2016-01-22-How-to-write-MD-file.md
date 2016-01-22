@@ -7,8 +7,6 @@ category: coach
 tags: [open-source]
 ---
 
-[toc]
-
 <p class="intro"><span class="dropcap">M</span>arkdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。</p>
 
 ## **兼容HTML**
@@ -30,6 +28,7 @@ HTML 的区段（行内）标签如 `<span>`、`<cite>`、`<del>` 可以在 Mark
 Markdown 支持两种标题方式：Setext 和 类atx形式
 
 **Setext**：
+
 >最高阶标题  
 >`=======`
 
@@ -48,11 +47,12 @@ Markdown 支持两种标题方式：Setext 和 类atx形式
 在行首插入1到6个`#`，分别表示6阶标题
 
 ># # 第一阶标题
->## ## 第一阶标题
->### ### 第一阶标题
->#### #### 第一阶标题
->##### ##### 第一阶标题
->###### ###### 第一阶标题 
+>## ## 第二阶标题
+>### ### 第三阶标题
+>#### #### 第四阶标题
+>##### ##### 第五阶标题
+>###### ###### 第六阶标题 
+
 
 ## **段落与换行**
 
@@ -263,10 +263,10 @@ Use the `printf()` function.
 
 ### Tables and alignment
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+First Header | Second Header  
+------------ | -------------  
+Content from cell 1 | Content from cell 2  
+Content in the first column | Content in the second column  
 
 
 | Left-Aligned  | Center Aligned  | Right Aligned |
@@ -303,6 +303,16 @@ Markup is based on [php markdown extra](https://michelf.ca/projects/php-markdown
 The HTML specification
 is maintained by the W3C.
 
+#### Functions
+
+正态分布为最常见的非均匀分布
+${ X \sim N(\mu, \sigma^2) }$
+${ x \in (-\infty; +\infty) }$
+
+<center>$$
+f(x) = \frac{1}{\sigma\sqrt{2\pi}}
+       \exp \left(-\frac{\left(x-\mu\right)^2}{2\sigma^2} \right)
+$$</center>
 
 #### Footnote
 
